@@ -454,7 +454,50 @@ header .header_left_hide {
   line-height: 1.2;
   color: #575A66;
 }
+.learning_2 {
+  display: none;
+}
+/* >>>>Мобильный размер экрана - начало>>> */
+/* TODO: ПРОБЛЕМА  + проверить все, шрифты,*/
+@media only screen and (max-width: 700px) {
+  .learning, .learning .img, .learning p {
+    display: none;
+  }
+  .learning_2 {
+    width: 100%;
+    display: flex;
+    background-color: #ECECEC;
+  }
+  .margin_2 {
+    margin: 32px 16px 32px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .start_2 {
+    margin: 0 0 32px 0;
+    width: 100%;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .items_2 {
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 16px 24px 16px;
+    margin-bottom: 8px;
+    background-color: lightgrey;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
 
+}
+/* <<<Мобильный размер экрана - конец<<<< */
 
 /* __________5  THESIS EXHIBIT__________________________________________ */
 .exhibit_container {
@@ -508,16 +551,11 @@ header .header_left_hide {
 .text_video h1 {
   padding-top: 24px;
   font-size: 30px;
-
 }
 .text_video p {
   padding-top: 8px;
   font-weight: lighter;
 }
-
-
-
-
 .right_ex {/* 5right */
   display: flex;
   justify-content: flex-start;
@@ -526,7 +564,6 @@ header .header_left_hide {
   width: 40%;
   height: 100%;
 }
-
 .right_ex .fisma, .right_ex .now {
   margin-top: 0;
   padding-top: 0;
@@ -539,8 +576,6 @@ header .header_left_hide {
 .right_ex .fisma {
   background-color: lightgrey;
 }
-
-
 .fisma .image_fisma {
   background-image: url(../images/thesis-fisma.jpg);
   width: 35%;
@@ -589,7 +624,6 @@ header .header_left_hide {
   .bottom_exhibit .left_ex {
     width: 100%;
     margin-right: 0;
-
   }
 }
 /* <<<Мобильный размер экрана - конец<<<< */
@@ -623,7 +657,6 @@ header .header_left_hide {
   color: #575A66;
   text-decoration: none;
   padding-left: 16px;
-
   transition-property: all;
   transition-duration: 200ms;
   transition-timing-function: ease-out;
@@ -635,15 +668,11 @@ header .header_left_hide {
 @media only screen and (max-width: 700px) {
   .foot_right {
     display: none;
-
   }
 }
 /* <<<Мобильный размер экрана - конец<<<< */
 
 /*____________________*/
-
-
-
 
 /* >>>>Мобильный размер экрана - начало>>> */
 @media only screen and (max-width: 700px) {
@@ -652,6 +681,5 @@ header .header_left_hide {
 /* <<<Мобильный размер экрана - конец<<<< */
 /* >>>>Мобильный размер экрана - начало>>> */
 @media only screen and (max-width: 1024px) {
-
 }
 /* <<<Мобильный размер экрана - конец<<<< */
