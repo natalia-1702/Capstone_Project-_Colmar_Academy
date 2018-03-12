@@ -51,7 +51,6 @@ header {
   padding-left: 8px;
   padding-right: 8px;
   color: #575A66;
-
   transition-property: all;
   transition-duration: 200ms;
 }
@@ -60,7 +59,11 @@ header {
   color: white;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
-
+.header_right ul li:active {
+  background-color: #575A66;
+  color: white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
 header .header_left_hide {
   display: none;
 }
@@ -85,10 +88,19 @@ header .header_left_hide {
     transition-property: all;
     transition-duration: 200ms;
     color: black;
-    padding: 12px 15px;
+    padding: 0 15px;
+  }
+  .header_left_hide img {
+    height: 60px;
   }
   .header_left_hide .fadiv:hover {
-    border-radius: 5px;
+    /*border-radius: 5px;*/
+    background-color: lightgrey;
+    color: white;
+    /*box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);*/
+  }
+  .header_left_hide .fadiv:active {
+    /*border-radius: 5px;*/
     background-color: #575A66;
     color: white;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
@@ -179,6 +191,7 @@ header .header_left_hide {
     margin-bottom: 32px;
     margin-left: 16px;
     margin-right: 16px;
+    color: red;
   }
 
 .learn_right .button_start {
@@ -190,7 +203,6 @@ header .header_left_hide {
 
   }
 }
-
 /* <<<Мобильный размер экрана - конец<<<< */
 /* 3  PRACTICING _____________________________         */
 
@@ -464,17 +476,11 @@ header .header_left_hide {
     display: none;
   }
   .learning_2 {
-    width: 100%;
     display: flex;
     background-color: #ECECEC;
-  }
-  .margin_2 {
-    margin: 32px 16px 32px 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 32px 16px 32px 16px;
     flex-direction: column;
-    width: 100%;
+    overflow: hidden;
   }
   .start_2 {
     margin: 0 0 32px 0;
@@ -483,17 +489,19 @@ header .header_left_hide {
     font-weight: bold;
     text-align: center;
     line-height: 1.2;
+    justify-content: center;
   }
-  .items_2 {
-    line-height: 1.2;
+  .block {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
+  }
+  .block h1 {
+    line-height: 1.2;
     padding: 16px 16px 24px 16px;
     margin-bottom: 8px;
     background-color: lightgrey;
-    margin-right: 16px;
-    margin-left: 16px;
   }
 
 }
