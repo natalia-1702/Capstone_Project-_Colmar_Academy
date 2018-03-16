@@ -1,13 +1,19 @@
 /* Universal */
-body {
-  color: #575A66;
-  font-family: Helvetica, Arial, sans-serif;
-  /*letter-spacing: 0.1rem;*/
-  font-size: 20px;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-.NewsCycle {
-  font-family: "News Cycle";
 
+body {
+  color: #4A4A4C;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.01rem;
+  font-size: 20px;
+  /*font-family: "News Cycle";*/
+}
+p {
+  font-weight: lighter;
 }
 /* 1 HEADER */
 header {
@@ -30,7 +36,7 @@ header {
   width: 100%;
 }
 .header_left h1:nth-child(2n+0) {
-  color: #575A66;
+  color: #4A4A4C;
   font-weight: bold;
 }
 .header_left h1 {
@@ -50,17 +56,17 @@ header {
 .header_right ul li {
   padding-left: 8px;
   padding-right: 8px;
-  color: #575A66;
+  color: #4A4A4C;
   transition-property: all;
   transition-duration: 200ms;
 }
 .header_right ul li:hover {
-  background-color: #575A66;
+  background-color: #4A4A4C;
   color: white;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
 .header_right ul li:active {
-  background-color: #575A66;
+  background-color: lightgrey;
   color: white;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
@@ -68,7 +74,7 @@ header .header_left_hide {
   display: none;
 }
 /* >>>>Мобильный размер экрана - начало>>> */
-@media only screen and (max-width: 700px) {/* ШРИФТЫ */
+@media only screen and (max-width: 900px) {/* ШРИФТЫ */
 .header_left, .header_right {
     display: none;
   }
@@ -101,7 +107,7 @@ header .header_left_hide {
   }
   .header_left_hide .fadiv:active {
     /*border-radius: 5px;*/
-    background-color: #575A66;
+    background-color: #4A4A4C;
     color: white;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
   }
@@ -136,21 +142,22 @@ header .header_left_hide {
 }
 .learn_right p {
   margin-bottom: 48px;
-  color: #575A66;
+  color: #4A4A4C;
   font-size: 20px;
   line-height: 1.2;
+  font-weight: normal;
   /* font-family: */
 }
 .learn_right h1 {
   font-weight: bold;
   font-size: 40px;
   margin-bottom: 48px;
-  color: #575A66;
+  color: #4A4A4C;
   line-height: 1.2;
     /* font-family:  межбуквенный интервал и межслов*/
 }
 .learn_right .button_start {
-  background-color: #575A66;
+  background-color: #4A4A4C;
   color: white;
   width:100%;
   padding-top: 8px;
@@ -172,7 +179,7 @@ header .header_left_hide {
 }
 
 /* >>>>Мобильный размер экрана - начало>>> */
-@media only screen and (max-width: 700px) {/* ШРИФТЫ */
+@media only screen and (max-width: 900px) {/* ШРИФТЫ */
   .learn_something {
     flex-direction: column;
   }
@@ -234,15 +241,15 @@ header .header_left_hide {
 }
 .practicing_left h1 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.2;
-  color: #575A66;
+  color: #4A4A4C;
   margin-bottom: 24px;
   /* font-family:   межбуквенный интервал и межслов*/
 }
 .practicing_left p {
   line-height: 1.2;
-  color: #575A66;
+  color: #4A4A4C;
   /* font-family:   межбуквенный интервал и межслов*/
 }
 .practicing_left p:last-child {
@@ -301,7 +308,7 @@ header .header_left_hide {
 }
 .text {
   width: 65%;
-  color: #575A66;
+  color: #4A4A4C;
   line-height: 1.2;
 
 }
@@ -312,9 +319,30 @@ header .header_left_hide {
 .text h1, .text p, .text a {
   padding-bottom: 8px;
 }
+.practicing .text a {
+  text-decoration: none;
+  color: #5294D9;
+  font-weight: lighter;
+}
 
 /* >>>>Мобильный размер экрана - начало>>> */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1350px) {
+.practicing_right {
+  width: 50%;
+}
+.practicing_left {
+  width: 50%;
+}
+}
+@media only screen and (max-width: 1200px) {
+.practicing_right {
+  width: 60%;
+}
+.practicing_left {
+  width: 40%;
+}
+}
+@media only screen and (max-width: 900px) {
   .practicing_left {
     display: none;
   }
@@ -373,30 +401,21 @@ header .header_left_hide {
     margin-left: 32px;
     margin-bottom: 64px;
   }
+
 }
 /* <<<Мобильный размер экрана - конец<<<< */
-/* __________4 LEARNING _____________________________________ */
+/* ++++__________4 LEARNING _____________________________________ */
 .learning {
   padding: 32px 72px;
   background-color: lightgrey;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-around;
+  align-items: stretch;
   flex-wrap: wrap;
-  flex-direction: column;
-}
-.learning .one {
+  flex-direction: row;
+  max-width: 1440px;
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 32px;
-}
-.learning .two {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  height: auto;
 }
 .learning .img {/* General rules for images in learning*/
   width: 100%;
@@ -408,27 +427,29 @@ header .header_left_hide {
 }
 .learning .start {/*head of learning*/
   width: 100%;
-  font-size: 35px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 32px;
 }
 .learning .start h1 {
   margin: 0;
+  font-size: 35px;
 }
 
 .learningblock { /* general rules for block in learning */
   align-content: flex-start;
   padding-bottom: 24px;
-  width: 26rem;
+  width: 28%;
+  height: 400px;
+  min-width: 20rem;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: flex-start;
   display: flex;
-  margin-right: 32px;
   background-color: white;
-  flex-grow: 1;
+  flex-grow: 2;
   align-self: stretch;/* Растягивает по всей высоте, таким образом выравниваются все */
+  margin: auto 16px 32px 16px;
 }
 
 .learning .software .img {/*1*/
@@ -455,23 +476,27 @@ header .header_left_hide {
   margin-right: 16px;
   margin-top: 8px;
   line-height: 1.2;
-  color: #575A66;
+  color: #4A4A4C;
+  font-size: 20px;
 }
 .learning h1 {
   margin-left: 16px;
   margin-top: 16px;
   margin-right: 16px;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   line-height: 1.2;
-  color: #575A66;
+  color: #4A4A4C;
 }
 .learning_2 {
   display: none;
 }
+
+
 /* >>>>Мобильный размер экрана - начало>>> */
-/* TODO: ПРОБЛЕМА  + проверить все, шрифты,*/
-@media only screen and (max-width: 700px) {
+
+@media only screen and (max-width: 900px) {
+
   .learning, .learning .img, .learning p {
     display: none;
   }
@@ -502,6 +527,7 @@ header .header_left_hide {
     padding: 16px 16px 24px 16px;
     margin-bottom: 8px;
     background-color: lightgrey;
+    font-size: 30px;
   }
 
 }
@@ -528,10 +554,10 @@ header .header_left_hide {
 .thesis h1 {
   margin-bottom: 32px;
   margin-top: 32px;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
   line-height: 1.2;
-  color: #575A66;
+  color: #4A4A4C;
   width: 100%;
 }
 .bottom_exhibit {
@@ -563,6 +589,7 @@ header .header_left_hide {
 .text_video p {
   padding-top: 8px;
   font-weight: lighter;
+  font-size: 20px;
 }
 .right_ex {/* 5right */
   display: flex;
@@ -590,7 +617,8 @@ header .header_left_hide {
   height: 12rem;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;background-color: #ECECEC;
+  background-size: cover;
+  background-color: #ECECEC;
   display: block;
   margin: 16px 16px 16px 16px;
 }
@@ -606,7 +634,7 @@ header .header_left_hide {
 }
 .text_exhibit_right  {
   width: 65%;
-  color: #575A66;
+  color: #4A4A4C;
   line-height: 1.2;
 
 }
@@ -618,7 +646,23 @@ header .header_left_hide {
   padding-bottom: 8px;
 }
 /* >>>>Мобильный размер экрана - начало>>> */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1350px) {
+.right_ex {
+  width: 50%;
+}
+.left_ex {
+  width: 50%;
+}
+}
+@media only screen and (max-width: 1200px) {
+  .right_ex {
+    width: 60%;
+  }
+  .left_ex {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 900px) {
   .text_video h1, .text_video p, .right_ex, .right_ex .fisma, .right_ex .now {
     display: none;
   }
@@ -636,7 +680,7 @@ header .header_left_hide {
 }
 /* <<<Мобильный размер экрана - конец<<<< */
 /* __________6 FOOTER_________________________________________ */
-.footer {
+footer {
   background-color: #ECECEC;
   width: 100%;
   height: 100%;
@@ -649,7 +693,7 @@ header .header_left_hide {
 .foot_left  {
   padding-top: 16px;
   padding-left: 24px;
-  color: #575A66;
+  color: #4A4A4C;
   display: flex;
   justify-content: flex-start;
   padding-bottom: 16px;
@@ -662,7 +706,7 @@ header .header_left_hide {
   padding-bottom: 16px;
 }
 .foot_right a {
-  color: #575A66;
+  color: #4A4A4C;
   text-decoration: none;
   padding-left: 16px;
   transition-property: all;
@@ -673,21 +717,18 @@ header .header_left_hide {
   font-weight: bold;
 }
 /* >>>>Мобильный размер экрана - начало>>> + */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .foot_right {
     display: none;
   }
 }
 /* <<<Мобильный размер экрана - конец<<<< */
 
-/*____________________*/
-
-/* >>>>Мобильный размер экрана - начало>>> */
-@media only screen and (max-width: 700px) {
-
-}
-/* <<<Мобильный размер экрана - конец<<<< */
-/* >>>>Мобильный размер экрана - начало>>> */
-@media only screen and (max-width: 1024px) {
-}
-/* <<<Мобильный размер экрана - конец<<<< */
+/* TODO:
+РАМКА на видео
+шрифт
+старт лернинг светится пусть
+вылазят изображения
+у текста разные цвета
+2 блок -текст пусть будет выровнян по центру
+логотип -сверху добавить пространство */
