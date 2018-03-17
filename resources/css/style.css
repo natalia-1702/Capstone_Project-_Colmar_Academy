@@ -1,25 +1,29 @@
 /* Universal */
-* {
+* {  /* чтобы падинг и маргин входили в видтх */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 body {
-  color: #4A4A4C;
+  color: #4F4F52;
   font-family: Helvetica, Arial, sans-serif;
+  /*font-family: Roboto;*/
   letter-spacing: 0.01rem;
   font-size: 20px;
-  /*font-family: "News Cycle";*/
 }
 p {
   font-weight: lighter;
+  color: #7C7C7F;
+}
+h1 {
+  color: #4F4F52;
 }
 /* 1 HEADER */
 header {
   height: 64px; /* header height + */
   width: 100%;
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,12 +40,13 @@ header {
   width: 100%;
 }
 .header_left h1:nth-child(2n+0) {
-  color: #4A4A4C;
+  color: #4F4F52;
   font-weight: bold;
 }
 .header_left h1 {
   line-height: 32px;
   height: 32px;
+  color: #7C7C7F;
 }
 
 .header_right {
@@ -56,12 +61,12 @@ header {
 .header_right ul li {
   padding-left: 8px;
   padding-right: 8px;
-  color: #4A4A4C;
+  color: #4F4F52;
   transition-property: all;
   transition-duration: 200ms;
 }
 .header_right ul li:hover {
-  background-color: #4A4A4C;
+  background-color: #4F4F52;
   color: white;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
@@ -87,17 +92,14 @@ header .header_left_hide {
     width: 100%;
     padding-right: 24px;
   }
-  .header_left_hide img {
-    height: 60px;
-  }
   .header_left_hide .fadiv {
     transition-property: all;
     transition-duration: 200ms;
     color: black;
-    padding: 0 15px;
+    padding: 10px 15px;
   }
   .header_left_hide img {
-    height: 60px;
+    height: 40px;
   }
   .header_left_hide .fadiv:hover {
     /*border-radius: 5px;*/
@@ -117,7 +119,7 @@ header .header_left_hide {
 
 /*  2 LEARN SOMETHING   */
 .learn_something {
-  background-color: lightgrey;
+  background-color: #d8d8d8;
   width: 100%;
   height: auto;
   display: flex;
@@ -142,8 +144,8 @@ header .header_left_hide {
 }
 .learn_right p {
   margin-bottom: 48px;
-  color: #4A4A4C;
-  font-size: 20px;
+  color: #4F4F52;
+  font-size: 30px;
   line-height: 1.2;
   font-weight: normal;
   /* font-family: */
@@ -152,7 +154,7 @@ header .header_left_hide {
   font-weight: bold;
   font-size: 40px;
   margin-bottom: 48px;
-  color: #4A4A4C;
+  color: #4F4F52;
   line-height: 1.2;
     /* font-family:  межбуквенный интервал и межслов*/
 }
@@ -204,10 +206,22 @@ header .header_left_hide {
 .learn_right .button_start {
     display: flex;
     justify-content: center;
-    margin-top: 24px;
-    margin-bottom: 32px;
+    /*margin-top: 24px;
+    margin-bottom: 32px;*/
     max-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #9E9E9E;
+    font-size: 30px;
 
+  }
+.learn_right h1 {
+    margin-top: 0;
+    margin-bottom: 32;
+  }
+  .learn_right p {
+    margin-top: 0;
+    margin-bottom: 24;
   }
 }
 /* <<<Мобильный размер экрана - конец<<<< */
@@ -219,7 +233,7 @@ header .header_left_hide {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #ECECEC;
+  background-color: #f3f5f5;
 }
 .practicing_left {
   display: flex;
@@ -243,13 +257,13 @@ header .header_left_hide {
   font-weight: bold;
   font-size: 35px;
   line-height: 1.2;
-  color: #4A4A4C;
+  color: #4F4F52;
   margin-bottom: 24px;
   /* font-family:   межбуквенный интервал и межслов*/
 }
 .practicing_left p {
   line-height: 1.2;
-  color: #4A4A4C;
+  color: #7C7C7F;
   /* font-family:   межбуквенный интервал и межслов*/
 }
 .practicing_left p:last-child {
@@ -308,13 +322,14 @@ header .header_left_hide {
 }
 .text {
   width: 65%;
-  color: #4A4A4C;
+  color: #7C7C7F;
   line-height: 1.2;
 
 }
 .text h1 {
   font-size: 30px;
   font-weight: bold;
+  color: #4F4F52;
 }
 .text h1, .text p, .text a {
   padding-bottom: 8px;
@@ -407,7 +422,7 @@ header .header_left_hide {
 /* ++++__________4 LEARNING _____________________________________ */
 .learning {
   padding: 32px 72px;
-  background-color: lightgrey;
+  background-color: #eaebec;
   display: flex;
   justify-content: space-around;
   align-items: stretch;
@@ -416,6 +431,7 @@ header .header_left_hide {
   max-width: 1440px;
   width: 100%;
   height: auto;
+
 }
 .learning .img {/* General rules for images in learning*/
   width: 100%;
@@ -433,7 +449,8 @@ header .header_left_hide {
 }
 .learning .start h1 {
   margin: 0;
-  font-size: 35px;
+  font-size: 40px;
+  color: #4F4F52;
 }
 
 .learningblock { /* general rules for block in learning */
@@ -476,7 +493,7 @@ header .header_left_hide {
   margin-right: 16px;
   margin-top: 8px;
   line-height: 1.2;
-  color: #4A4A4C;
+  color: #7C7C7F;
   font-size: 20px;
 }
 .learning h1 {
@@ -486,7 +503,7 @@ header .header_left_hide {
   font-size: 30px;
   font-weight: bold;
   line-height: 1.2;
-  color: #4A4A4C;
+  color: #4F4F52;
 }
 .learning_2 {
   display: none;
@@ -502,10 +519,11 @@ header .header_left_hide {
   }
   .learning_2 {
     display: flex;
-    background-color: #ECECEC;
+    background-color: #f5f4f5;
     padding: 32px 16px 32px 16px;
     flex-direction: column;
     overflow: hidden;
+    border: 1px solid lightgrey;
   }
   .start_2 {
     margin: 0 0 32px 0;
@@ -529,7 +547,12 @@ header .header_left_hide {
     background-color: lightgrey;
     font-size: 30px;
   }
-
+  .block h1:first-child {
+    background-color: #f5f4f5;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 40px;
+  }
 }
 /* <<<Мобильный размер экрана - конец<<<< */
 
@@ -540,8 +563,9 @@ header .header_left_hide {
   align-items: center;
   padding-left: 24px;
   padding-bottom: 32px;
-  background-color: #ECECEC;
+  background-color: #f3f5f5;
   flex-direction: column;
+  color: #7C7C7F;
 
 }
 .thesis {
@@ -557,8 +581,9 @@ header .header_left_hide {
   font-size: 35px;
   font-weight: bold;
   line-height: 1.2;
-  color: #4A4A4C;
+  color: #4F4F52;
   width: 100%;
+  font-size: 40px;
 }
 .bottom_exhibit {
   display: flex;
@@ -576,15 +601,18 @@ header .header_left_hide {
 }
 .vid {
     display: block;
+
 }
 .left_ex video {
   height: auto;
   width: 100%;
   overflow: hidden;
+  border: 3px solid lightgrey;
 }
 .text_video h1 {
   padding-top: 24px;
   font-size: 30px;
+  color: #4F4F52;
 }
 .text_video p {
   padding-top: 8px;
@@ -598,6 +626,7 @@ header .header_left_hide {
   flex-direction: column;
   width: 40%;
   height: 100%;
+  color: #7C7C7F;
 }
 .right_ex .fisma, .right_ex .now {
   margin-top: 0;
@@ -618,7 +647,7 @@ header .header_left_hide {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #ECECEC;
+  background-color: #d8d8d8;
   display: block;
   margin: 16px 16px 16px 16px;
 }
@@ -634,13 +663,14 @@ header .header_left_hide {
 }
 .text_exhibit_right  {
   width: 65%;
-  color: #4A4A4C;
+  color: #4a4a4a;
   line-height: 1.2;
 
 }
 .text_exhibit_right h1 {
   font-size: 30px;
   font-weight: bold;
+  color: #4F4F52;
 }
 .text_exhibit_right h1, .text_exhibit_right p {
   padding-bottom: 8px;
@@ -668,6 +698,7 @@ header .header_left_hide {
   }
   .thesis h1 {
     margin-bottom: 16px;
+    font-size: 40px;
   }
   .exhibit_container {
     padding-left: 0;
@@ -681,7 +712,7 @@ header .header_left_hide {
 /* <<<Мобильный размер экрана - конец<<<< */
 /* __________6 FOOTER_________________________________________ */
 footer {
-  background-color: #ECECEC;
+  background-color: #f3f5f5;
   width: 100%;
   height: 100%;
   display: flex;
@@ -693,7 +724,7 @@ footer {
 .foot_left  {
   padding-top: 16px;
   padding-left: 24px;
-  color: #4A4A4C;
+  color: #4a4a4a;
   display: flex;
   justify-content: flex-start;
   padding-bottom: 16px;
@@ -706,7 +737,7 @@ footer {
   padding-bottom: 16px;
 }
 .foot_right a {
-  color: #4A4A4C;
+  color: #4a4a4a;
   text-decoration: none;
   padding-left: 16px;
   transition-property: all;
@@ -725,10 +756,7 @@ footer {
 /* <<<Мобильный размер экрана - конец<<<< */
 
 /* TODO:
-РАМКА на видео
-шрифт
-старт лернинг светится пусть
-вылазят изображения
-у текста разные цвета
-2 блок -текст пусть будет выровнян по центру
-логотип -сверху добавить пространство */
+вылазят изображения при наведении 
+язык
+
+*/
