@@ -1,5 +1,5 @@
 /* Universal */
-* {  /* чтобы падинг и маргин входили в видтх */
+* {  /* padding and margin within width100% */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -78,7 +78,7 @@ header {
 header .header_left_hide {
   display: none;
 }
-/* >>>>Мобильный размер экрана - начало>>> */
+/* >>>>mobile size windows---- BEGINNING  >>> */
 @media only screen and (max-width: 900px) {/* ШРИФТЫ */
 .header_left, .header_right {
     display: none;
@@ -114,7 +114,7 @@ header .header_left_hide {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
   }
 }
-/* <<<Мобильный размер экрана - конец<<<< */
+/* >>>>mobile size windows---- The END >>> */
 
 
 /*  2 LEARN SOMETHING   */
@@ -148,7 +148,6 @@ header .header_left_hide {
   font-size: 30px;
   line-height: 1.2;
   font-weight: normal;
-  /* font-family: */
 }
 .learn_right h1 {
   font-weight: bold;
@@ -156,7 +155,6 @@ header .header_left_hide {
   margin-bottom: 48px;
   color: #4F4F52;
   line-height: 1.2;
-    /* font-family:  межбуквенный интервал и межслов*/
 }
 .learn_right .button_start {
   background-color: #4A4A4C;
@@ -171,16 +169,13 @@ header .header_left_hide {
   transition-delay: 0;
   transition-timing-function: ease-out;
   transition-duration: 200ms;
-
-    /* font-family:   межбуквенный интервал и межслов*/
 }
-.button_start:hover {/*
-  background-color: #281212;*/
+.button_start:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
   background-color: rgb(0, 173, 105);
 }
 
-/* >>>>Мобильный размер экрана - начало>>> */
+/* >>>>mobile size windows----BEGINNING >>> */
 @media only screen and (max-width: 900px) {/* ШРИФТЫ */
   .learn_something {
     flex-direction: column;
@@ -200,14 +195,11 @@ header .header_left_hide {
     margin-bottom: 32px;
     margin-left: 16px;
     margin-right: 16px;
-    color: red;
   }
 
 .learn_right .button_start {
     display: flex;
     justify-content: center;
-    /*margin-top: 24px;
-    margin-bottom: 32px;*/
     max-width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -223,8 +215,12 @@ header .header_left_hide {
     margin-top: 0;
     margin-bottom: 24;
   }
+  .button_start:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    background-color: rgb(0, 173, 105);
+  }
 }
-/* <<<Мобильный размер экрана - конец<<<< */
+ /* >>>>mobile size windows---- The END >>> */
 /* 3  PRACTICING _____________________________         */
 
 .practicing {
@@ -259,17 +255,14 @@ header .header_left_hide {
   line-height: 1.2;
   color: #4F4F52;
   margin-bottom: 24px;
-  /* font-family:   межбуквенный интервал и межслов*/
 }
 .practicing_left p {
   line-height: 1.2;
   color: #7C7C7F;
-  /* font-family:   межбуквенный интервал и межслов*/
 }
 .practicing_left p:last-child {
   padding-top: 1.5rem; /* Добавила от себя, чтоб было простарнство как на рисунке */
 }
-/* font-family:   межбуквенный интервал и межслов*/
 .practicing_right {
   display: flex;
   justify-content: space-between;
@@ -340,7 +333,7 @@ header .header_left_hide {
   font-weight: lighter;
 }
 
-/* >>>>Мобильный размер экрана - начало>>> */
+/* >>>>mobile size windows---- BEGINNING >>> */
 @media only screen and (max-width: 1350px) {
 .practicing_right {
   width: 50%;
@@ -418,7 +411,7 @@ header .header_left_hide {
   }
 
 }
-/* <<<Мобильный размер экрана - конец<<<< */
+/* >>>>mobile size windows---- The END >>> */
 /* ++++__________4 LEARNING _____________________________________ */
 .learning {
   padding: 32px 72px;
@@ -510,7 +503,13 @@ header .header_left_hide {
 }
 
 
-/* >>>>Мобильный размер экрана - начало>>> */
+
+
+
+.learningblock_hide {/* HIDE*/
+  display: none;
+}
+/* >>>>mobile size windows---- BEGINNING >>> */
 
 @media only screen and (max-width: 900px) {
 
@@ -546,6 +545,9 @@ header .header_left_hide {
     margin-bottom: 8px;
     background-color: lightgrey;
     font-size: 30px;
+    transition-delay: 0;
+    transition-property: all;
+    transition-duration: 200ms;
   }
   .block h1:first-child {
     background-color: #f5f4f5;
@@ -553,8 +555,73 @@ header .header_left_hide {
     margin-bottom: 0;
     font-size: 40px;
   }
+  .block h1:nth-child(1n+2):hover {
+    background-color: #9E9E9E;
+    color: white;
+  }
+  .block h1:nth-child(1n+2):hover {
+    background-color: #9E9E9E;
+    color: white;
+  }
+
+/*
+.block h1:nth-child(1n+2):hover {
+  top: 0;
+  opacity: 1;
 }
-/* <<<Мобильный размер экрана - конец<<<< */
+    .definable .definition-container {
+  position: fixed;
+  z-index: 10;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 4rem 2rem 4rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  font-family: "Proza Libre", sans-serif;
+  font-size: 1.5rem;
+  transition-property: opacity, top;
+  transition-delay: 0ms;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+
+}
+*/
+.learningblock_hide {/* HIDE*/
+  display: none;
+}
+
+.block h1:last-child:active {
+
+  .learning_2 .img_hide {/* HIDE*/
+
+
+  }
+  .learningblock_hide { /* HIDE*/
+    align-content: center;
+    width: 90%;
+    /*height: 400px;*/
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    background-color: white;
+    margin: auto 16px 32px 16px;
+  }
+
+  .learning .software .img {/* HIDE*/
+    background-image: url(../images/course-software.jpg);
+    width: 100%;
+    height: 13rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+}
+/* >>>>mobile size windows---- The END >>> */
 
 /* __________5  THESIS EXHIBIT__________________________________________ */
 .exhibit_container {
@@ -675,7 +742,7 @@ header .header_left_hide {
 .text_exhibit_right h1, .text_exhibit_right p {
   padding-bottom: 8px;
 }
-/* >>>>Мобильный размер экрана - начало>>> */
+/* >>>>mobile size windows---- BEGINNING >>> */
 @media only screen and (max-width: 1350px) {
 .right_ex {
   width: 50%;
@@ -709,7 +776,7 @@ header .header_left_hide {
     margin-right: 0;
   }
 }
-/* <<<Мобильный размер экрана - конец<<<< */
+/* >>>>mobile size windows---- The END >>> */
 /* __________6 FOOTER_________________________________________ */
 footer {
   background-color: #f3f5f5;
@@ -747,16 +814,10 @@ footer {
 .foot_right a:hover { /* При наведении курсора */
   font-weight: bold;
 }
-/* >>>>Мобильный размер экрана - начало>>> + */
+/* >>>>mobile size windows---- BEGINNING>>> */
 @media only screen and (max-width: 900px) {
   .foot_right {
     display: none;
   }
 }
-/* <<<Мобильный размер экрана - конец<<<< */
-
-/* TODO:
-вылазят изображения при наведении 
-язык
-
-*/
+/* >>>>mobile size windows---- The END >>> */
